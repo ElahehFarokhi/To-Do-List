@@ -1,5 +1,5 @@
 <div style="margin-bottom: 4px;">
-  <button (click)="onSelectUser()">
+  <button [class.active]="selected" (click)="onSelectUser()">
     <img [src]="imageUrl"
     [alt]="user.name">
     <span>{{user.name}}</span>
